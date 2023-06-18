@@ -1059,6 +1059,10 @@ row-gap: 30px;
         margin: 3rem 3rem;
     }
 
+    .group_items{
+        margin:  2rem 3rem 2rem 3rem; 
+    }
+
     .third{
         margin: 0 auto 3rem auto;
     }
@@ -1067,7 +1071,7 @@ row-gap: 30px;
 }
 
 .mach_color{
-    margin: 3rem auto;
+    margin: 3rem 3rem;
 }
 
 .cert_color{
