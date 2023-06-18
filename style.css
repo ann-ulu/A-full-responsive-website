@@ -1047,3 +1047,39 @@ row-gap: 30px;
 }
 
 }
+
+@media screen and (max-width:768px){
+    .hero__section{
+        margin: 0 auto;
+    }
+
+    /* about*/
+
+    .main1{
+        margin: 3rem auto;
+    }
+
+    .third{
+        margin: 0 auto 3rem auto;
+    }
+.product{
+    margin: 0 auto;
+}
+
+.mach_color{
+    margin: 3rem auto
+}
+
+.cert_color{
+    margin: 0 auto;
+}
+
+.contact_section{
+    margin: 0 auto;
+}
+.footer_groupuse{
+    margin: 0 auto;
+}
+
+
+}
