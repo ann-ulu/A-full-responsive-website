@@ -1056,26 +1056,26 @@ row-gap: 30px;
     /* about*/
 
     .main1{
-        margin: 3rem auto;
+        margin: 3rem 3rem;
     }
 
     .third{
         margin: 0 auto 3rem auto;
     }
 .product{
-    margin: 0 auto;
+    margin: 0 3rem;
 }
 
 .mach_color{
-    margin: 3rem auto
+    margin: 3rem auto;
 }
 
 .cert_color{
-    margin: 0 auto;
+    margin: 0 3rem;
 }
 
 .contact_section{
-    margin: 0 auto;
+    margin: 0 3rem;
 }
 .footer_groupuse{
     margin: 0 auto;
