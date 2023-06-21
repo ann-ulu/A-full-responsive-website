@@ -45,7 +45,7 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
     
     // Send email using EmailJS
     emailjs.send("service_37x7mrk", "template_zdjz90e", {
-      to_email: 'callmeoluchi@gmail.com',
+      to_email: 'ann.ulu@sevenip.org',
       from_name: 'Ann',
       from_email: 'uluann1@gmail.com',
       message: body
