@@ -34,29 +34,30 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
     // Get form values
     var name = document.getElementById('name').value;
     var email = document.getElementById('email').value;
-    var message = document.getElementById('cname').value;
+    var cname = document.getElementById('cname').value;
     var message = document.getElementById('message').value;
-   
     
     // Create the email body
     var body = 'Name: ' + name + '\n' +
                'Email: ' + email + '\n' +
-               'Email: ' + cname + '\n' +
+               'Company Name: ' + cname + '\n' +
                'Message: ' + message;
     
-    // Send email using a service like EmailJS
-    Email.send({
-      Host: 'smtp.gmail.com',
-      Username: 'uluann1@gmail.com',
-      Password: 'Luchioffice',
-      To: 'callmeoluchi@gmail.com',
-      From: 'uluann1@gmail.com',
-      Subject: 'Form Submission',
-      Body: body
-    }).then(function(message) {
+    // Send email using EmailJS
+    emailjs.send("service_37x7mrk", "template_zdjz90e", {
+      to_email: 'callmeoluchi@gmail.com',
+      from_name: 'Ann',
+      from_email: 'uluann1@gmail.com',
+      message: body
+    })
+    .then(function(response) {
+      console.log("SUCCESS", response.status, response.text);
       alert('Email sent successfully!');
       // Optionally, you can clear the form inputs after successful submission
       document.getElementById('myForm').reset();
+    }, function(error) {
+      console.log("FAILED", error);
+      alert('Failed to send email. Please try again later.');
     });
   });
   
