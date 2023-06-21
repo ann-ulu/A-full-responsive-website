@@ -18,7 +18,7 @@ img{
 /*menu bar for desktop / large screen view*/
 .navbar{
     
-    height: 80px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,8 +27,6 @@ img{
     top: 0;
     z-index: 999;
     background-color: #E8FCEB; 
-  
-
 }
 
 
@@ -39,11 +37,8 @@ img{
     z-index: 1;
     width: 100%;
     max-width: 1400px;
-    margin-top: 1.6rem;
+    margin-top: 1rem;
     padding: 0 2rem;
-    padding-top: 1rem;
-    
-
 }
 
 
@@ -55,6 +50,8 @@ img{
 .navbar__menu{
     display: flex;
     align-items: center;
+    justify-content: center;
+    padding: .5rem;
     list-style: none;
     text-align: center;
     font-family: 'Zilla Slab', serif;
@@ -63,18 +60,28 @@ img{
 }
 
 .navbar__links{
-padding: 0 1rem;
+padding: 0 1.7rem;
 }
+
+
 
 .navbar__item a{
     text-decoration: none;
     color: black;
 }
 
-.navbar__item:hover{
-   
-    cursor: pointer;
+
+
+.navbar__item a:hover{
+    width: 100%;
+    transition: width 0.3s linear;
+    color: #81E271;
 }
+
+
+/*#annn{
+    background-color: white;
+}*/
 
 /*hero section for home page*/
 
@@ -187,7 +194,15 @@ margin-bottom: 1rem;
     grid-template-columns: 1fr;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
+
+.lineit{
+    position: absolute;
+    top: 60px;
+    left: -35px;
+}
+
 
 .about_section{
     display: flex;
@@ -310,7 +325,8 @@ border: 1px solid #a6e69d;
 /*product section*/
 
 .product_color{
-    background-color: white;
+    background-color:#DAF7D5;
+;
 }
 
 .product{
@@ -319,6 +335,7 @@ border: 1px solid #a6e69d;
 }
 
 .product_main{
+    padding-top: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -341,8 +358,17 @@ border: 1px solid #a6e69d;
     justify-content: space-between;
     grid-column-gap: 200px;
     margin-top: 0;
+    position: relative;
 }
 
+
+
+
+.product_second .linecrate{
+    position: absolute;
+    top: 20px;
+    left: -35px;
+}
 
 .crates h4{
     font-size: 1.5rem;
@@ -378,7 +404,16 @@ marquee img{
 .mach_color{
     max-width: 1400px;
     margin: 3rem 6.4rem;
+    position: relative;
 }
+.lineuse{
+    position: absolute;
+    top: 100px;
+    left: -35px;
+    height: 450px;
+    width: 16px;
+}
+
 .mach_about{
     display: flex;
     align-items: center;
@@ -392,100 +427,67 @@ marquee img{
 }
 
 .mach_about p{
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
+    text-align: center;
 }
 
-.mach_use{
-
+.imageone img{
+    width: 350px;
+    transition: transform .2s;
 }
-
-/*.mach_details{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    /*grid-gap: 1.5rem 4rem;
-    justify-items:space-evenly;
-    align-items: center;
+.imageone img:hover{
+    -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
 }
-*/
-.mach_image{
-   /* background-color: red;*/
-  
-}
-
-.mach_image img{
- width: 508px;
- height: 302px;
- 
-}
-
-
 
 .mach_details{
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.mach_use{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-align-items: center;
-justify-items: space-between;
-/*grid-column-gap: 50px;*/
-margin-bottom: 3rem;
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
 }
 
-#mach_use1{
-display: flex;
-align-items: flex-start;
-justify-content: center;
+.content h3{
+    font-size: 1rem;
 }
 
-#getimage img{
-    width: 650px;
-    height: 350px;
-    
-   }
-
-.mach_content{
-   /* width: 458px;*/
-   
-    background-color: #F0F0F0;
-    
-}
-
-#mach_content1{
-width: 60%;
-height: 350px;
-}
-
-#mach_content1{
-    
-    }
-
-
-.mach_content h4{
-    padding: 2rem 1rem 1rem 1rem;
-}
-
-.mach_content p{
-    padding: .5rem 1rem 3rem 1rem;
-}
 
 
 /*Nigerian Certificate*/
-.cert_main{
+section{
     background-color: #E8FCEB;
-    margin-bottom: 3rem;
 }
 
-.cert_color{
+.cert_main{
+    margin-bottom: 3rem;
     max-width: 1400px;
     margin: 0 6.4rem;
+    position: relative;
+}
+
+
+
+.cert_color{
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
    column-gap: 200px;
 }
+
+.line3{
+    position: absolute;
+    top: 37px;
+    left:-35px;
+}
+
 
 .cert_content{
   /*  background-color: red;*/
@@ -511,8 +513,9 @@ height: 350px;
 /*contact section for larger screen */
 .contact_us{
     background-color: white;
-
+    margin-top: 3rem;
 }
+
 .contact_section{
     max-width: 1400px;
     margin: 0 6.4rem;
@@ -522,6 +525,12 @@ height: 350px;
     justify-content: center;
     grid-column-gap: 100px;
     margin-bottom: 3rem;
+    position: relative;
+}
+
+.line39{
+    position: absolute;
+    left: -35px;
 }
 
 .contact_info h3{
@@ -603,7 +612,7 @@ input[type=submit]{
     padding: .7rem;
     width: 100%;
     border: none;
-    margin-top: .7rem;
+    margin-top: 2rem;
     background-color: #81E271;
 }
 
@@ -693,6 +702,12 @@ font-size: 0.75rem;
                font-weight: 700;
             }
     }*/
+
+@media screen  and (max-width: 1280px) {
+    .imageone img{
+        width: 250px;
+    }
+}
 
 
 
@@ -856,6 +871,9 @@ text-align: center;
     justify-content: center;
     flex-direction: column;
 }
+.lineit{
+    display: none;
+}
 
 .first_group .trust{
     width: 90%;
@@ -942,59 +960,56 @@ third_right_group{
     justify-content: center;
 
 }
+.linecrate{
+    display: none;
+}
 
 /*machinery for mobile*/
-.mach_image img{
-    width: 700px;
-    height: auto;
-    
-   }
-   .mach_details{
-    display: grid;
-    grid-template-columns: 1fr;
+.lineuse{
+    display: none;
+    /*position: absolute;
+    top: 120px;
+    left: -30px;
+    height: 600px;
+    width: 17px;*/
 }
 
-
-
-.mach_use{
-    display: grid;
-    grid-template-columns: 1fr;
-align-items: center;
-justify-items: center;
-grid-row-gap: 30px;
-margin-bottom: 3rem;
-}
-
-#mach_use1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.mach_details{
     flex-direction: column;
-    row-gap: 0;
-    }
+    row-gap: 2rem;
+}
 
-    #getimage img{
-        width: 700px;
-        height: auto;
-        
-       }
+.imageone img{
+    width: 350px;
+    
+}
 
-       #mach_content1{
-        width: 100%;
-        height: auto;
-        }
+
 
 
 
 
 
 /*cert section for mobile*/
+
+.cert_main{
+    margin: 0 3rem;
+}
 .cert_color{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
    row-gap: 10px;
+}
+
+.line3{
+    display: none;
+    /*position: absolute;
+    top: 10px;
+    left:-27px;
+    height: 480px;
+    width: 19px;*/
 }
 
 .cert_content{
@@ -1017,6 +1032,9 @@ margin-bottom: 3rem;
 
 .contact_info p{
     width: 100%;
+}
+.line39{
+    display: none;
 }
 
 /*footer for smaller screen*/
@@ -1070,8 +1088,29 @@ row-gap: 30px;
     margin: 0 3rem;
 }
 
+.product_second .linecrate{
+    position: absolute;
+    top: 70px;
+    left: -20px;
+}
+
 .mach_color{
     margin: 3rem 3rem;
+}
+
+.lineuse{
+    position: absolute;
+    top: 120px;
+    left: -27px;
+    height: 1700px;
+}
+
+.mach_color img{
+   
+}
+
+.cert_main{
+    margin: 0 3rem;
 }
 
 .cert_color{
