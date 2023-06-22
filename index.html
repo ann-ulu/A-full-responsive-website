@@ -302,7 +302,34 @@
 
         
 </footer>
+<script defer src="main.js"></script>
+<script type="text/javascript"
+       defer src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+        emailjs.init("WabCwjtiTVfbMbnm5");
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+        document.getElementById('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // generate the contact number value
+            this.contact_number.value = Math.random() * 100000 | 0;
+            // these IDs from the previous steps
+            emailjs.sendForm('service_xnxprod', 'template_ldsjah5', this)
+            .then(function() {
+                console.log('SUCCESS!');
+            }, function(error) {
+                console.log('FAILED...', error);
+            });
+        });
+        }
+    </script>
+
+
 
 </body>
-<script src="main.js"></script>
+
 </html>
