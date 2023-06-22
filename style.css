@@ -549,6 +549,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    margin-bottom: 1.5rem;
     
 }
 .img_contact{
@@ -578,7 +579,7 @@ section{
     font-size: 1rem;
 }
 
-#form h3{
+#contact-form h3{
     text-align: left;
     font-size: 1.5rem;
     font-weight: 600;
@@ -624,6 +625,17 @@ input[type=submit]{
 .input-control textarea:focus{
 outline: 0;
 padding: 1rem;
+}
+
+#email-error{
+    color: red;
+    margin-bottom: .5rem;
+}
+
+#response-message{
+ background-color: #4B3806;
+ color: white;
+ margin: 1rem 0;
 }
 
 /*footer section for larger screen*/
