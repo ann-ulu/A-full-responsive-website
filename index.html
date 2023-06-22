@@ -219,7 +219,7 @@
 <div class="contact_right">
 
     <div class="container">
-<form id="form" action="/">
+<form id="contact-form" action="/">
     <h3>Leave Us A Message</h3>
     <div class="input-control">
         <label for="name">Name</label>
@@ -313,7 +313,7 @@
     </script>
     <script type="text/javascript">
         window.onload = function() {
-        document.getElementById('form').addEventListener('submit', function(event) {
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
             event.preventDefault();
             // generate the contact number value
             this.contact_number.value = Math.random() * 100000 | 0;
